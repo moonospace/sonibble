@@ -8,10 +8,7 @@
 
 /* Tailwindcss */
 @import "tailwindcss";
-
 @plugin "@tailwindcss/typography";
-@plugin "@tailwindcss/forms";
-@plugin "tailwindcss-animate";
 
 @theme {
   --font-*: initial;
