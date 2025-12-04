@@ -7,13 +7,13 @@ import {
   ProcessSection,
   ServiceSection,
 } from "@features/landing";
-import { generatedMetadata } from "@shared/libs";
+import { generatedMetadata } from "@shared/libs/shared-metadata";
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: generatedMetadata({
-      title: "Your business growth & success partner | Sonibble",
+      title: "Your Business Growth & Success Partner | Sonibble",
       description:
         "We help small business, startups, and professional grow, scale & win the game",
     }),
