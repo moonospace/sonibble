@@ -26,16 +26,15 @@ export function generatedMetadata({
     {
       name: "keywords",
       content:
-        "Product Designer, UI UX Designer, Web Designer, Shopify Developer, Web Developer, Webflow Expert, Framer Expert, Squarespace, Wix Developer, Fullstack, Mobile Developer, Indie Hacker",
+        "Web Designer, Agency, Landing page design, Web Developer, ROI, Lift Profit, Converting Landing Page",
     },
     { name: "creator", content: "Weebo" },
     { name: "publisher", content: "Weebo" },
     { name: "application-name", content: "Weebo" },
     { name: "google-site-verification", content: "" },
     { name: "category", content: "Websites" },
-    { name: "generator", content: "React Router" },
+    { name: "generator", content: "Tanstack start" },
     { name: "pinterest-rich-pin", content: "true" },
-
     {
       name: "og:title",
       content: title,
@@ -48,11 +47,10 @@ export function generatedMetadata({
       name: "og:image",
       content:
         image ??
-        "https://cdn.hashnode.com/res/hashnode/image/upload/v1729709107977/6dabcb40-d18e-48cf-a86b-7b423efb6605.png",
+        "https://cdn.hashnode.com/res/hashnode/image/upload/v1764832682755/704c4073-97bb-4002-97cc-cba286b7bb39.png",
     },
     { name: "og:locale", content: "en_US" },
     { name: "og:type", content: "website" },
-
     {
       name: "twitter:title",
       content: title,
@@ -68,7 +66,7 @@ export function generatedMetadata({
       name: "twitter:image",
       content:
         image ??
-        "https://cdn.hashnode.com/res/hashnode/image/upload/v1729709107977/6dabcb40-d18e-48cf-a86b-7b423efb6605.png",
+        "https://cdn.hashnode.com/res/hashnode/image/upload/v1764832682755/704c4073-97bb-4002-97cc-cba286b7bb39.png",
     },
   ];
 }
