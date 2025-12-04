@@ -1,8 +1,6 @@
-"use client";
-
 import * as DialogPrimitive from "@radix-ui/react-dialog";
-import { mergeClass } from "@shared/libs";
 import type * as React from "react";
+import { cx } from "tailwind-variants/lite";
 import { ScrollArea } from "./scroll-area";
 
 const Dialog = DialogPrimitive.Root;
@@ -20,7 +18,7 @@ const DialogOverlay = ({
   > | null>;
 }) => (
   <DialogPrimitive.Overlay
-    className={mergeClass(
+    className={cx(
       "data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed inset-0 z-50 bg-black/20 data-[state=closed]:animate-out data-[state=open]:animate-in",
       className
     )}
@@ -43,7 +41,7 @@ const DialogContent = ({
   <DialogPortal>
     <DialogOverlay />
     <DialogPrimitive.Content
-      className={mergeClass(
+      className={cx(
         "data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-bottom-[48%] data-[state=open]:slide-in-from-bottom-[48%] fixed top-[50%] left-[50%] z-50 grid tablet:w-full w-[90%] max-w-lg translate-x-[-50%] translate-y-[-50%] gap-4 rounded-3xl bg-surface p-2 duration-300 data-[state=closed]:animate-out data-[state=open]:animate-in",
         className
       )}
