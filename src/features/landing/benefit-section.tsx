@@ -11,7 +11,7 @@ const benefits: string[] = [
 
 function BenefitItem({ benefit }: { benefit: string }) {
   return (
-    <li className="group hover:-translate-y-1 flex cursor-pointer items-center gap-2 text-foreground/60 transition-all duration-300 hover:text-foreground">
+    <li className="group flex cursor-pointer items-center gap-2 text-foreground/60 transition-all duration-300 hover:-translate-y-1 hover:text-foreground">
       <i className="fi fi-sc-check-circle text-foreground/40 transition-all duration-300 group-hover:scale-95 group-hover:text-foreground" />
       {benefit}
     </li>

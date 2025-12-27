@@ -6,10 +6,10 @@ import {
 } from "@shared/components/ui/accordion";
 import type * as React from "react";
 
-type FAQ = {
+interface FAQ {
   question: string;
   answer: string;
-};
+}
 
 const faqs: FAQ[] = [
   {
@@ -43,7 +43,7 @@ function FAQItem({ faq, id }: { faq: FAQ; id: string }): React.ReactElement {
   const { question, answer } = faq;
   return (
     <AccordionItem
-      className="hover:-translate-y-1 transition-all duration-300"
+      className="transition-all duration-300 hover:-translate-y-1"
       value={`faq-${id}`}
     >
       <AccordionTrigger>{question}</AccordionTrigger>

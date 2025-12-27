@@ -16,15 +16,15 @@ export function CTASection(): React.ReactElement {
       </p>
 
       <div className="mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
-        <span className="hover:-translate-y-1 flex cursor-pointer items-center gap-2 text-sm transition-all duration-300">
+        <span className="flex cursor-pointer items-center gap-2 text-sm transition-all duration-300 hover:-translate-y-1">
           <i className="fi fi-sc-check-circle text-green-500" />
           No bullshit
         </span>
-        <span className="hover:-translate-y-1 flex cursor-pointer items-center gap-2 text-sm transition-all duration-300">
+        <span className="flex cursor-pointer items-center gap-2 text-sm transition-all duration-300 hover:-translate-y-1">
           <i className="fi fi-sc-check-circle text-green-500" />
           Quick meeting
         </span>
-        <span className="hover:-translate-y-1 flex cursor-pointer items-center gap-2 text-sm transition-all duration-300">
+        <span className="flex cursor-pointer items-center gap-2 text-sm transition-all duration-300 hover:-translate-y-1">
           <i className="fi fi-sc-check-circle text-green-500" />
           Perfect spot
         </span>
@@ -33,7 +33,7 @@ export function CTASection(): React.ReactElement {
       <div className="mt-16 flex justify-center">
         <Button
           asChild
-          className="hover:-translate-y-2 transition-all duration-300 hover:scale-95"
+          className="transition-all duration-300 hover:-translate-y-2 hover:scale-95"
           size={"md"}
           variant={"primary"}
         >

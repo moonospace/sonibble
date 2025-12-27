@@ -1,8 +1,8 @@
-type Process = {
+interface Process {
   label: string;
   title: string;
   desc: string;
-};
+}
 
 const processes: Process[] = [
   {
@@ -31,14 +31,14 @@ function ProcessItem({ process }: { process: Process }) {
   const { label, title, desc } = process;
 
   return (
-    <div className="hover:-translate-y-2 group flex cursor-pointer flex-col rounded-2xl bg-surface p-4 transition-all duration-300">
+    <div className="group flex cursor-pointer flex-col rounded-2xl bg-surface p-4 transition-all duration-300 hover:-translate-y-2">
       <div className="relative flex">
         <span className="flex items-center gap-1 rounded-full bg-secondary px-3 py-1 font-medium text-sm transition-all duration-300">
           <i className="fi fi-sc-check-circle" />
           {label}
         </span>
 
-        <i className="fi fi-sr-bullet -right-2 -top-2 absolute text-foreground/50 text-lg" />
+        <i className="fi fi-sr-bullet absolute -top-2 -right-2 text-foreground/50 text-lg" />
       </div>
 
       <h3 className="mt-3 text-pretty font-bricolage font-medium text-lg">

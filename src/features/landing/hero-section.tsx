@@ -20,7 +20,7 @@ export function HeroSection(): React.ReactElement {
       <div className="mt-16 flex tablet:flex-row flex-col items-center gap-4">
         <Button
           asChild
-          className="hover:-translate-y-1 transition-all duration-300 hover:scale-95"
+          className="transition-all duration-300 hover:-translate-y-1 hover:scale-95"
           size={"md"}
           variant={"primary"}
         >

@@ -9,7 +9,7 @@ export function WebDesignDevServiceItem(): React.ReactElement {
   return (
     <Dialog>
       <DialogTrigger>
-        <div className="group hover:-translate-y-1 relative col-span-1 flex cursor-pointer rounded-3xl bg-surface p-1 transition-all duration-300">
+        <div className="group relative col-span-1 flex cursor-pointer rounded-3xl bg-surface p-1 transition-all duration-300 hover:-translate-y-1">
           <div className="flex w-full items-center rounded-2xl p-4">
             <i className="fi fi-sc-check-circle transition-all duration-300" />
             <h3 className="ml-2 text-pretty font-medium leading-tight">

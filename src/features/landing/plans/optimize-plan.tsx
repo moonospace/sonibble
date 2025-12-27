@@ -9,7 +9,7 @@ export function OptimizePlan(): React.ReactElement {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <div className="hover:-translate-y-2 col-span-2 tablet:col-span-1 flex cursor-pointer flex-col rounded-3xl bg-surface p-2 transition-all duration-300">
+        <div className="col-span-2 tablet:col-span-1 flex cursor-pointer flex-col rounded-3xl bg-surface p-2 transition-all duration-300 hover:-translate-y-2">
           <div className="flex h-full w-full flex-col rounded-2xl p-4">
             <h2 className="text-pretty font-bricolage font-medium text-xl">
               Optimize
